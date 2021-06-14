@@ -1,0 +1,16 @@
+$orangeColor: #E54817;
+$blueColor: #19818E;
+
+
+.landing {
+    margin: 20px auto;
+    position: relative;
+    z-index: -2;
+    // background: linear-gradient(white, lighten($color: $blueColor, $amount: 50), white);
+}
+
+
+
+@media (max-width: 450px) {
+    
+}

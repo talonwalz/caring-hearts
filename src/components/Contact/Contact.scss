@@ -1,0 +1,443 @@
+$orangeColor: #E54817;
+$blueColor: #19818E;
+
+.contact {
+ 
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: -2;
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: $blueColor;
+    }
+    img {
+        width: 20%;
+        height: auto;
+    }
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5px 50px;
+    text-align: center;
+    width: 60%;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 40px 30px;
+    color: $blueColor;
+    margin-top: 20px;
+    width: 100%;
+
+    h1 {
+        color: black;
+        margin-bottom: 20px;
+    }
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 40px 30px;
+    margin-top: 20px;
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 20%;        
+    }
+
+    div {
+        margin: 10px;
+        color: $blueColor
+    }
+}
+
+.request-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .input-box {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+        width: 100%;
+        color: $blueColor;
+    }
+
+    label {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    input {
+        width: 90%;
+        height: 50px;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    textarea {
+        margin-bottom: 20px;
+        // margin-right: 20px;
+        // margin-left: 20px;
+        height: 80px; 
+        font-size: 20px;
+        padding: 5px 20px;
+        width: 95%;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+    }
+
+    .special {
+        width: 50%;
+    }
+
+    button {
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .hours {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 2px black solid;
+        border-radius: 5px;
+        padding: 40px 30px;
+        margin-top: 20px;
+    
+        section {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 10%;        
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+        h2 {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+    }
+    
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 10px;
+        text-align: center;
+        width: 75%;
+    }
+    
+    .address {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 2px black solid;
+        border-radius: 5px;
+        padding: 20px 20px;
+        color: $blueColor;
+        margin-top: 20px;
+
+        h1 {
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+    
+    .hours {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: space-evenly;
+        border: 2px black solid;
+        border-radius: 5px;
+        // padding: 10px 0;
+        margin-top: 20px;
+        width: 100%;
+    
+        section {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%; 
+            padding: 0 10%;  
+        }
+    
+        div {
+            margin: 0;
+            color: $blueColor;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+    
+}
+
+@media (max-width: 805px) {
+    .contact {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+        h2 {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .request-info {
+
+            .inputs {
+                label {
+                    font-size: 18px;
+                }
+            }
+            .input-box {
+             input textarea {
+                font-size: 18px;
+            }
+        }
+        }
+    }
+}
+
+@media (max-width: 605px) {
+
+    .contact {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+        h2 {
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+    .hours {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: space-evenly;
+        border: 2px black solid;
+        border-radius: 5px;
+        // padding: 10px 0;
+        margin-top: 20px;
+        width: 100%;
+    
+        section {
+            display: flex;
+            justify-content: space-between;
+            width: 100%; 
+            padding: 0;  
+            margin-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+
+    .contact {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+    
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 10px;
+        text-align: center;
+        width: 90%;
+    }
+    
+    .address {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 2px black solid;
+        border-radius: 5px;
+        padding: 20px 20px;
+        color: $blueColor;
+        margin-top: 20px;
+
+        h1 {
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+    
+    .hours {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: space-evenly;
+        border: 2px black solid;
+        border-radius: 5px;
+        padding: 10px 0;
+        margin-top: 20px;
+
+        width: 100%;
+    
+        section {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%; 
+            padding: 0;  
+            margin-right: 20px;         
+        }
+    
+        div {
+            margin: 0;
+            margin-bottom: 15px;
+            color: $blueColor;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+    
+    .request-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        border: 2px black solid;
+        border-radius: 5px;
+        padding: 10px 10px;
+        padding: 0;
+        margin-top: 20px;
+    
+        .input-box {
+            display: flex;
+            
+        }
+    
+        h2 {
+            text-align: center;
+            width: 100%;
+            color: $blueColor;
+        }
+    
+        label {
+            margin-top: 10px;
+            margin-left: 10px;
+
+            font-size: 17px;
+            font-weight: bold;
+            // color: $blueColor;
+        }
+    
+        input {
+            margin: 0 10px;
+            height: 30px;
+            font-size: 17px;
+            width: 150px;
+            padding-left: 5px;
+        }
+    
+        textarea {
+            margin: 0 10px;
+            margin-bottom: 20px;
+            height: 120px;
+            font-size: 17px;
+            padding: 5px;
+        }
+    
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 100%;
+        }
+    
+        button {
+            border: 1px black solid;
+            border-radius: 5px;
+            padding: 2px;
+            font-size: 16px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+}

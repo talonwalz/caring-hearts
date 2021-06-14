@@ -1,6 +1,3 @@
-@import 'scss/config';
-@import 'scss/buttons';
-@import 'scss/alerts';
 $orangeColor: #E54817;
 $blueColor: #19818E;
 
@@ -29,6 +26,7 @@ $blueColor: #19818E;
   z-index: 1;
   -webkit-transition: color 150ms ease-in-out;
   background-color: lighten($blueColor, 5%);
+  // background: linear-gradient(lighten($blueColor, 10%),$blueColor);
   transition: color 150ms ease-in-out;
   cursor: pointer;
 }
