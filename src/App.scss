@@ -21,12 +21,14 @@ $blueColor: #19818E;
   border-color: black;
   border-radius: 5px;
   color: black;
+  color: white; // new btn
   position: relative;
   overflow: hidden;
   z-index: 1;
   -webkit-transition: color 150ms ease-in-out;
   background-color: lighten($blueColor, 5%);
-  // background: linear-gradient(lighten($blueColor, 10%),$blueColor);
+  background: lighten(rgb(82, 79, 79), 0%); // new btn
+  background: linear-gradient(to left, darken(rgb(82, 79, 79), 7%),rgb(82, 79, 79)); // new btn
   transition: color 150ms ease-in-out;
   cursor: pointer;
 }
@@ -44,6 +46,11 @@ $blueColor: #19818E;
   width: 0;
   height: 100%;
   background: lighten($orangeColor, 0%);
+  background: lighten(rgb(82, 79, 79), 0%);
+  background: lighten($blueColor, 5%); //new btn
+  background: linear-gradient(to right,$blueColor, lighten($blueColor, 5%));
+
+
   z-index: -1;
   -webkit-transition: width 550ms ease-in-out;
   transition: width 550ms ease-in-out;

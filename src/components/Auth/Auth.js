@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { connect } from 'react-redux'
 import { updateUser, logoutUser } from '../../Redux/reducers/userReducer'
-import image from '../../images/kokopellis.jpg'
+import image from '../../images/caringHeartsImg.png'
 import './Auth.scss'
 
 const Auth = (props) => {
@@ -23,19 +23,16 @@ const Auth = (props) => {
         const {userReducer,history} = props
             if (userReducer.user) {
                 history.push('/admin')
-            } 
-        axios.post('/auth/login', {username, password})
-        .then(res => {
-            
-            props.updateUser(res.data)
-            props.history.push('/admin')
-            console.log(res.data)
-        })
-        .catch(err => {
-            console.log(err)
-            alert('Invalid Login')
-        })
-            
+            } else {
+                axios.post('/auth/login', {username, password})
+                .then(res => {
+                    props.updateUser(res.data)
+                    props.history.push('/admin')
+                })
+            .catch(err => {
+                alert('Invalid Login')
+            })
+        }  
     }  
 
     function registerUser() {
@@ -43,7 +40,6 @@ const Auth = (props) => {
         .then(res => {
             props.updateUser(res.data)
             props.history.push('/admin')
-            console.log(res.data)
         })
         .catch(err => console.log(err))
     }
@@ -57,6 +53,12 @@ const Auth = (props) => {
         .catch(err => console.log(err))
     }
 
+    function handleKeyPress(e) {
+        if (e.key === 'Enter') {
+            loginUser()
+        }
+    }
+
 
     return (
        
@@ -64,13 +66,13 @@ const Auth = (props) => {
             <p>Must be an employee to login</p>
             <div>
             <input value={username}  placeholder="username" onChange={e => setUsername(e.target.value)}/>
-            <input value={password} type="password" placeholder="password" onChange={e => setPassword(e.target.value)}/>
+            <input value={password} type="password" placeholder="password" onChange={e => setPassword(e.target.value)} onKeyPress={handleKeyPress}/>
             <div>
             <button className="altBtn" onClick={loginUser}>Login</button>
             <button className="altBtn" onClick={logoutUser}>Logout</button>
             {admin ? <button className="altBtn" onClick={registerUser}>Register</button> : null }
             </div>
-            <img src={image} alt="NARF logo"/>
+            <img src={image} alt="Caring Hearts logo"/>
             </div>
         </section>
     )

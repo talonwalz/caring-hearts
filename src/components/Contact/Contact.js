@@ -1,53 +1,55 @@
 import React, {useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 import './Contact.scss'
-// import image from '../../images/logoIcon.png'
-import image from '../../images/logoIcon.png'
-
 import axios from 'axios'
-
 
 const Contact = () => {
     const [ date, setDate ] = useState(new Date().toDateString())
     const [ name, setName ] = useState('')
     const [ phone, setPhone ] = useState('')
     const [ message, setMessage ] = useState('')
-    const [ subject, setSubject ] = useState('')
 
+    function sendText() {
 
-    // function addRequest() {
+            axios.post('/api/send-text', { name, phone, message})
+            .then(res => {
+                console.log(res.data)
+                notifySuccess(res.data)
+            })
+            .catch(err => {
+                console.log(err)
+                notifyWarning(err.response.data)
+            })
+            setName('')
+            setPhone('')
+            setMessage('')
 
-    //         // axios.post('/api/email-us', { first, last, phone, message, email, subject})
-    //         // // .then(res => console.log(res.data))
-            
-    //         // .catch(err => console.log(err))
-    //         // axios.post('/api/email-from-us', { first, last, email })
-    //         emailUs()
-    //         emailFromUs()
-    //         axios.post('/api/request-info', { first, last, phone, message, date})
-    //         .then(res => {
-    //             setName('')
-    //             setPhone('')
-    //             setMessage('')
-    //             setEmail('')
-    //             setSubject('')
-    //             console.log(res.data)
-    //         })
-    //         .catch(err => console.log(err))
+    }
 
-    // }
+    function notifyWarning(msg) {
+        toast.error(msg, {
+            position: "bottom-center",
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        })
+    }
 
-    // function emailUs() {
-    //     axios.post('/api/email-us', { first, last, phone, message, email, subject})
-    //     .then()
-    //     .catch(err => console.log(err))
-    // }
-
-    // function emailFromUs() {
-    //     axios.post('/api/email-from-us', { first, last, email, image })
-    //     .then()
-    //     .catch(err => console.log(err))
-    // }
-
+    function notifySuccess(msg) {
+        toast.success(msg, {
+            position: "bottom-center",
+            autoClose: 4000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        }) 
+    }
 
     return (
         <main className="contact">
@@ -81,8 +83,8 @@ const Contact = () => {
                     </div>
                 </section>
             </article>
-            <h1>Request Information</h1>
-            <section className="request-info">   
+            <h1>Send Us A Message To Get Started!</h1>
+            <section id="get-started" className="request-info">   
                 <div className="input-box">
                     <div className="inputs">
                     <label >Name: </label>
@@ -99,11 +101,12 @@ const Contact = () => {
                 </div> 
                 <div className="inputs">
                 <label className="message">Message: </label>          
-                <textarea placeholder="ask any specific questions..." value={message} onChange={e => setMessage(e.target.value)} required/>
+                <textarea placeholder="ask any specific questions here..." value={message} onChange={e => setMessage(e.target.value)} required/>
                 </div> 
-                {/* <button className="mainBtn" onClick={addRequest}>Submit</button> */}
+                <button className="mainBtn" onClick={sendText}>Submit</button>
             </section>
             </section>
+            <ToastContainer />
         </main>
     )
 }

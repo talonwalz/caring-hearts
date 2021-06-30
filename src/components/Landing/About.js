@@ -2,14 +2,13 @@ import React from 'react'
 import logo from '../../images/caringHeartsImg.png'
 import './About.scss'
 
-
 const About = () => {
     return (
         <main className="about-container"> 
             <img src={logo} alt="logo" />
             <section>
                 {/* <h1>To promote, enhance, and facilitate the quality of life and the recovery of normal movement for our patients through skilled therapeutic intervention.</h1> */}
-                <h1>Caring Hearts Purpose.</h1>
+                <h1>Professionalizing in personalized full time In-Home care. Let your loved ones avoid the chaos of assisted living centers and give them the care they need in the comfort of their own homes.</h1>
                 <br/>
                 <p>It is our mission to create an enjoyable family atmosphere and rewarding work environment where you are happy, love being here and can reach your individual aspirations and goals. Our entire staff is made up of very creative and high toned people who are committed to providing you with safe, effective and creative treatments. We promise to listen, understand and genuinely care about you and your condition. We will provide you with this level of service in a friendly, fun and compassionate atmosphere.</p>
                 <br/>

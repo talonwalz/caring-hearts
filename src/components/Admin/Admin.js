@@ -6,17 +6,12 @@ import { logoutUser } from '../../Redux/reducers/userReducer'
 import Testimonials from './Testimonials'
 import './Admin.scss'
 
-
-
-const Admin = (props) => {
-    
-    
+const Admin = (props) => {  
 
     useEffect(() => {
         const {userReducer,history} = props
         if (!userReducer.user) {
-            history.push('/')
-            
+            history.push('/')   
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
@@ -61,7 +56,6 @@ const Admin = (props) => {
             </article>
         )
     })
-
 
     return (
         <section className="admin-container">

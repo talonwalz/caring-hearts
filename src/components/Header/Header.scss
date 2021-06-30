@@ -16,7 +16,7 @@ $blueColor: #19818E;
     }
 
     background-color: #fff;
-    // background: linear-gradient(to right, $blueColor, white);
+    background: linear-gradient( white, $blueColor);
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -89,6 +89,8 @@ $blueColor: #19818E;
 
             .btn2 {
                 animation: slideLeft ease-in .75s;
+                background: lighten($blueColor, 5%);
+                color: black;
             }
 
             .btn3 {

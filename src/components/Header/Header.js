@@ -1,7 +1,6 @@
 import React from 'react'
-import image from '../../images/caringHeartsImg.png'
+import image from '../../images/caringHeartsIcon.png'
 import { Link } from 'react-router-dom'
-import Nav from './Nav'
 import './Header.scss'
 
 const Header = () => {
@@ -19,7 +18,7 @@ const Header = () => {
             <section className="right">
                 <div className="links">
                 <Link to="/patient-feedback"><button className='btn1 mainBtn'><strong>Give Feedback</strong></button></Link>
-                <Link to="/covid-info"><button className='btn2 mainBtn'><strong>Covid Updates</strong></button></Link>
+                <Link to="/get-started"><button className='btn2 mainBtn'><strong>Let's Get Started!</strong></button></Link>
                 <Link to="/contact-us"><button className=' btn3 mainBtn'><strong>Contact Us</strong></button></Link>
                 </div>
             </section>           

@@ -9,6 +9,9 @@ import Patient from './components/Patient/Patient'
 import Services from './components/Services/Services'
 import Team from './components/Team/Team'
 import SuccessStories from './components/SuccessStories/SuccessStories'
+import GetStarted from './components/GetStarted/GetStarted'
+import EmployeeAuth from './components/Auth/EmployeeAuth'
+import Employee from './components/Patient/Employee'
 
 export default (
     <Switch>
@@ -21,6 +24,9 @@ export default (
         <Route path="/patient-feedback" component={Feedback}/>
         <Route path="/admin" component={Admin}/>
         <Route path="/covid-info" component={Covid}/>
-        <Route path="/success-stories" component={SuccessStories}/>   
+        <Route path="/success-stories" component={SuccessStories}/>  
+        <Route path="/get-started" component={GetStarted}/>  
+        <Route path="/employee-login" component={EmployeeAuth}/> 
+        <Route path="/employee-info" component={Employee}/> 
     </Switch>
 )

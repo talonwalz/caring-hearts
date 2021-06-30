@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import image from '../../images/caringHeartsImg.png'
 import { connect } from 'react-redux'
 import {updateFeedback} from '../../Redux/reducers/feedbackReducer'
-
 import './Feedback.scss'
 import axios from 'axios'
 

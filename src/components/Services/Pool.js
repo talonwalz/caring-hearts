@@ -4,64 +4,56 @@ import poolImg from '../../images/caregiverFour.jpeg'
 
 const Pool = () => {
     return (
-        // <section>
-            
-        //     <br/>
-        //     <h3>Benefits</h3>
-        // </section>
+        
         <main className="pool-container">
             <h1>Services Offered</h1>
             <img src={poolImg} alt="pool"/>
             <section className="aquatic-therapy">
-                <p>Aquatic Therapy is provided by our physical therapy staff in our multi-depth, therapeutic pool at Northern Arizona Rehabilitation & Fitness. It is offered as a modality in conjunction with land based therapy or by itself as the primary therapy if appropriate. Individuals can access the pool either by stairs or a hydraulic lift that uses a chair or stretcher. Depths range from 4 to 6 feet.</p>              
+                <p className="paragraph" > We provide exceptional and affordable in-home care. Our caregivers are reliable, fully screened, and experienced in providing the best care to your loved ones.</p>              
                 <div className="pool-benefits">
                 <details>
                     <summary>Live-in Caregivers</summary>
-                    <p>Buoyancy offers a tremendous advantage because it reduces the effects of gravity allowing for increased joint range of motion. </p>
+                    <p>Live-in caregivers are assigned to live with an older adult for a period of time and provide care directly in their own home.</p>
                 </details>
                 <details>
                     <summary>Dementia Care</summary>
-                    <p>Water is 600-700 times more resistive than air which allows for strengthening of weakened muscles.</p>
+                    <p>Dementia care is specialist support from a carer experienced in the specific challenges the condition presents.</p>
                 </details>
                 <details>
                     <summary>Grocery Shopping & Errands</summary>
-                    <p>Immersion in warm water increases an individual’s comfort, by increasing blood supply to sore muscles and promoting relaxation. Weight relief to weakened body structures also creates additional comfort.</p>
+                    <p>Our caregivers will support and aid in grocery shopping and other errands.</p>
                 </details>
                 <details>
                     <summary>Grooming Assistance</summary>
-                    <p>Water temperatures above 92 degrees in conjunction with hands on techniques are effective in creating neutral warmth that reduces increased tone due to a neurological injury.</p>
+                    <p>Our caregivers are trained and experienced in assisting in all areas of personal hygiene assistance as required by the situation</p>
                 </details>
                 <details>
                     <summary>Dressing Assistance</summary>
-                    <p>The uniform pressure of the water along with buoyancy provides support to your body which allows you increased time to react without the fear of falling or getting hurt.</p>
+                    <p>Our caregivers are trained and experienced in helping choose appropriate clothing and assisting with dressing as required by the situation.</p>
                 </details>
                 <details>
                     <summary>Escort on Outings</summary>
-                    <p>The uniform pressure of the water along with buoyancy provides support to your body which allows you increased time to react without the fear of falling or getting hurt.</p>
+                    <p>Our caregivers are trained and experienced in escorting on outings as required by the situation.</p>
                 </details>
                 <details>
                     <summary>Personal Care</summary>
-                    <p>The uniform pressure of the water along with buoyancy provides support to your body which allows you increased time to react without the fear of falling or getting hurt.</p>
+                    <p>Our caregivers are trained and experienced in assisting in all areas of personal care as required by the situation.</p>
                 </details>
                 <details>
                     <summary>Meal Preparation</summary>
-                    <p>The uniform pressure of the water along with buoyancy provides support to your body which allows you increased time to react without the fear of falling or getting hurt.</p>
+                    <p>Our caregivers are trained and experienced in all areas of feeding assistance as well as meal preparation as required by the person’s physical or cognitive situation.</p>
                 </details>
                 <details>
                     <summary>Light Housekeeping</summary>
-                    <p>The uniform pressure of the water along with buoyancy provides support to your body which allows you increased time to react without the fear of falling or getting hurt.</p>
+                    <p>A clean home, clothes, and fresh sheets are essential in maintaining the health, cleanliness, and the emotional well-being of the client and their family.</p>
                 </details>
                 <details>
                     <summary>Medication Reminders</summary>
-                    <p>The uniform pressure of the water along with buoyancy provides support to your body which allows you increased time to react without the fear of falling or getting hurt.</p>
-                </details>
-                <details>
-                    <summary>Respite Care</summary>
-                    <p>The uniform pressure of the water along with buoyancy provides support to your body which allows you increased time to react without the fear of falling or getting hurt.</p>
+                    <p>Our caregivers remind your loved one to take their medications at the correct time and record this on a Weekly Medication Schedule that the correct dose has been taken on time.</p>
                 </details>
                 <details>
                     <summary>Post-Surgery Care</summary>
-                    <p>The uniform pressure of the water along with buoyancy provides support to your body which allows you increased time to react without the fear of falling or getting hurt.</p>
+                    <p>Our caregivers are trained and experienced in post-surgical care as required by the person’s physical or cognitive situation.</p>
                 </details>
                 </div>
             </section>

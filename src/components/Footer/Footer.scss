@@ -9,6 +9,7 @@ $blueColor: #19818E;
 
 .footer-container {
  
+    z-index: -3;
     background: linear-gradient(rgb(82, 79, 79), darken(rgb(82, 79, 79), 10%));
 
     color: #fff;
@@ -85,10 +86,16 @@ $blueColor: #19818E;
         .footer-logo {
             width: 100%;
             height: auto;
+            transition: 1s ease-in-out;
+            
+            &:hover {
+                transform: rotate(360deg);
+            }
         }
         img {
-            width: 60%;
+            width: 100%;
             height: auto;
+            
         }
 
         .google {
@@ -103,9 +110,11 @@ $blueColor: #19818E;
         }
 
         .fb {
-            height: 50px;
+            height: 60px;
             width: auto;
             transition: 1s ease-in-out;
+            position: relative;
+            left: 5px;
 
             &:hover {
                 transform: rotate(360deg);
@@ -221,11 +230,6 @@ $blueColor: #19818E;
                 position: relative;
                 left: 0;
             }
-              
-            .footer-logo {
-                position: relative;
-                left: 16px;
-            }
 
             .google {
                 margin-left: 30px;
@@ -241,7 +245,7 @@ $blueColor: #19818E;
                 height: 60px;
                 width: auto;   
                 position: relative;
-                right: 0;            
+                left: 0;            
             }
         }
     

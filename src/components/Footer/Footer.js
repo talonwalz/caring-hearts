@@ -1,10 +1,9 @@
 import React from 'react'
-import image from '../../images/caringHeartsImg.png'
 import icon from '../../images/icons8-hearts-64white.png'
 import { Link } from 'react-router-dom'
 import './Footer.scss'
 
-const googleReview = `https://www.google.com/search?q=northern+arizona+rehab+and+fitness&rlz=1C5CHFA_enUS939US939&sxsrf=ALeKk01GrOB8Kt4JBAPwqzUz-jI3EGUq2A%3A1618265615150&ei=D8Z0YJDFCMmUtAbi0rTABA&oq=norther&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIFCAAQkQIyBQguEJECMgoILhCHAhCxAxAUMgUIABCRAjIFCAAQkQIyBQguEJECMgUIABCxAzIFCAAQsQMyDQguEIcCEMcBEK8BEBQ6BwgjELADECc6BwgAEEcQsAM6EAguEMcBEKMCELADEMgDEEM6CgguELADEMgDEENKBQg4EgExUKMJWKMJYLUQaAFwAngAgAGPAYgBjQKSAQMwLjKYAQCgAQGqAQdnd3Mtd2l6yAEPwAEB&sclient=gws-wiz#lrd=0x872d0ff2380e2769:0xba632fdc16ac17d8,1,,,`
+// const googleReview = `https://www.google.com/search?q=northern+arizona+rehab+and+fitness&rlz=1C5CHFA_enUS939US939&sxsrf=ALeKk01GrOB8Kt4JBAPwqzUz-jI3EGUq2A%3A1618265615150&ei=D8Z0YJDFCMmUtAbi0rTABA&oq=norther&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIFCAAQkQIyBQguEJECMgoILhCHAhCxAxAUMgUIABCRAjIFCAAQkQIyBQguEJECMgUIABCxAzIFCAAQsQMyDQguEIcCEMcBEK8BEBQ6BwgjELADECc6BwgAEEcQsAM6EAguEMcBEKMCELADEMgDEEM6CgguELADEMgDEENKBQg4EgExUKMJWKMJYLUQaAFwAngAgAGPAYgBjQKSAQMwLjKYAQCgAQGqAQdnd3Mtd2l6yAEPwAEB&sclient=gws-wiz#lrd=0x872d0ff2380e2769:0xba632fdc16ac17d8,1,,,`
 
 const Footer = () => {
     return (
@@ -17,6 +16,7 @@ const Footer = () => {
                 <Link to="/new-patient" style={{textDecoration: "none"}}><li>NEW PATIENT</li></Link>
                 <Link to="/contact-us" style={{textDecoration: "none"}}><li>CONTACT US</li></Link>
                 <Link to="/auth" style={{textDecoration: "none"}}><li>LOGIN</li></Link>
+                <Link to="/employee-login" style={{textDecoration: "none"}}><li>EMPLOYEES</li></Link>
             </ul>   
             
             <section className="middle">
@@ -27,8 +27,8 @@ const Footer = () => {
                 <Link to="/" style={{textDecoration: "none"}}><img className="footer-logo" src={icon} alt="Caring Hearts logo"/></Link>  
                 
                 <div>
-                    <a href="https://www.facebook.com/norazrehab" target="_blank" rel="noopener noreferrer"><img className="fb" src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="facebook link"/></a>
-                    <a href={googleReview} target="_blank" rel="noopener noreferrer"><img className="google" src="https://img.icons8.com/fluent/48/000000/google-logo.png" alt="google review link"/></a>
+                    <a href="https://www.facebook.com/Caring-Hearts-113697130284224/" target="_blank" rel="noopener noreferrer"><img className="fb" src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="facebook link"/></a>
+                    {/* <a href={googleReview} target="_blank" rel="noopener noreferrer"><img className="google" src="https://img.icons8.com/fluent/48/000000/google-logo.png" alt="google review link"/></a> */}
                 </div>
                 </article>
         </header>        

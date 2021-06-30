@@ -22,9 +22,11 @@ $blueColor: #19818E;
         border: 2px black solid;
         border-radius: 5px;
 
-        p {
-            font-size: 18px;
-            margin: 0 20px
+        .paragraph {
+            font-size: 24px;
+            margin: 0 40px;
+            margin-top: 20px;
+            text-align: center;
         }
 
         h2 {
@@ -83,8 +85,8 @@ $blueColor: #19818E;
             border: 2px black solid;
             border-radius: 5px;
     
-            p {
-                font-size: 18px;
+            .paragraph {
+                font-size: 24px;
                 margin: 0 20px
             }
     
@@ -145,9 +147,10 @@ $blueColor: #19818E;
             border: 2px black solid;
             border-radius: 5px;
     
-            p {
-                font-size: 18px;
-                margin: 0 20px
+            .paragraph {
+                font-size: 22px;
+                margin: 0 auto;
+                // text-align: left; 
             }
     
             h2 {
@@ -207,9 +210,9 @@ $blueColor: #19818E;
             border: 2px black solid;
             border-radius: 5px;
     
-            p {
-                font-size: 18px;
-                margin: 0 20px
+            .paragraph {
+                font-size: 22px;
+                margin: 0 auto;
             }
     
             h2 {
@@ -265,9 +268,9 @@ $blueColor: #19818E;
                     margin: 10px 0;
                     width: 100%;
 
-                    p {
+                    .paragraph {
                         width: 100%;
-                        margin: 0;         
+                        margin: 0; 
                     }
                 }
             }
