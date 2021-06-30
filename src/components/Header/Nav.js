@@ -8,7 +8,8 @@ const Nav = () => {
     return (
         <section className='nav-container'>
             <div onClick={() => setMenu(!menu)} className={menu ? "hamburger-x" : "hamburger"}>
-            </div>           
+                <div></div> 
+            </div>         
             <ul className={ menu ? "dropdown" : "null" }>
                 <Link to="/" style={{textDecoration: "none"}} onClick={() => setMenu(!menu)}><li className="btn btn1">HOME</li></Link>
                 <Link to="/our-team" style={{textDecoration: "none"}} onClick={() => setMenu(!menu)}><li >OUR TEAM</li></Link>
