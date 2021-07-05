@@ -9,7 +9,7 @@ module.exports = {
         
         client.messages.create({
             body: `My name is ${name}. ${message} My phone number is ${phone}.`,
-            to: phone,
+            to:'9284514065',
             from: '+18016163712' // # from twilio
         }).then((message)=> {
             console.log(message.body)
