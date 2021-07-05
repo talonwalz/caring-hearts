@@ -17,6 +17,7 @@ $blueColor: #19818E;
 
     background-color: #fff;
     background: linear-gradient( white, $blueColor);
+    // background: linear-gradient( white, #4e4b6e);
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -54,6 +55,11 @@ $blueColor: #19818E;
         p {
             color: black;
             font-weight: bold;
+        }
+
+        .caption {
+            font-family: cursive;
+            font-size: 30px;
         }
     }
 }
@@ -134,6 +140,11 @@ $blueColor: #19818E;
             font-size: 38px;
             right: 40px;
 
+            .caption {
+                font-family: cursive;
+                font-size: 30px;
+            }
+
             .phone {
                 font-size: 26px;
             }
@@ -156,6 +167,11 @@ $blueColor: #19818E;
             font-size: 38px;
             right: 40px;
 
+            .caption {
+                font-family: cursive;
+                font-size: 26px;
+            }
+
             .phone {
                 font-size: 26px;
             }
@@ -176,6 +192,11 @@ $blueColor: #19818E;
         }
         .middle {
             font-size: 30px;
+
+            .caption {
+                font-family: cursive;
+                font-size: 22px;
+            }
 
             .phone {
                 font-size: 20px;
@@ -234,12 +255,17 @@ $blueColor: #19818E;
             height: 100%;
             width: 100%;
 
+            .caption {
+                font-family: cursive;
+                font-size: 30px;
+            }
+
             .phone {
                 font-size: 26px;
             }
     
             p {
-                color: $blueColor;
+                // color: $blueColor;
                 font-weight: bold;
             }
         }

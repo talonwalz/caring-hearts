@@ -13,13 +13,15 @@ const Header = () => {
             </Link>
             <section className="middle">
                 <p>Caring Hearts of Utah</p>
+                <p className="caption">Proudly serving Utah for over 20 years!</p>
                 <p className="phone">(801) 471-5059</p>
             </section>
             <section className="right">
                 <div className="links">
-                <Link to="/patient-feedback"><button className='btn1 mainBtn'><strong>Give Feedback</strong></button></Link>
+                <Link to="/contact-us"><button className=' btn1 mainBtn'><strong>Contact Us</strong></button></Link>
                 <Link to="/get-started"><button className='btn2 mainBtn'><strong>Let's Get Started!</strong></button></Link>
-                <Link to="/contact-us"><button className=' btn3 mainBtn'><strong>Contact Us</strong></button></Link>
+                <Link to="/employee-login"><button className='btn3 mainBtn'><strong>Employment</strong></button></Link>
+                
                 </div>
             </section>           
         </header>
