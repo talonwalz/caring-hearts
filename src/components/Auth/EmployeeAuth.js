@@ -43,7 +43,8 @@ const Auth = (props) => {
        
         <section className="employeeAuth-container">
              <ToastContainer />
-            <p>Must be an employee to login</p>
+            <p><strong>Must be an employee to login</strong></p>
+            <h4>Contact Dave Roberts at 801-471-5059 for password</h4>
             <div className="outerDiv">
                 <input value={pin} type="password" placeholder="password" onChange={e => setPin(e.target.value)} onKeyPress={handleKeyPress}/>
                 <div className="innerDiv">

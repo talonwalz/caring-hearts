@@ -7,6 +7,11 @@ $blueColor: #19818E;
     position: relative;
     z-index: -2;
     // background: linear-gradient(white, lighten($color: $blueColor, $amount: 50), white);
+    .focal {
+        text-align: center;
+        margin-bottom: 20px;
+        font-style: italic;
+    }
 }
 
 
