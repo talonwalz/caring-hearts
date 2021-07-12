@@ -3,7 +3,7 @@ import icon from '../../images/icons8-hearts-64white.png'
 import { Link } from 'react-router-dom'
 import './Footer.scss'
 
-// const googleReview = `https://www.google.com/search?q=northern+arizona+rehab+and+fitness&rlz=1C5CHFA_enUS939US939&sxsrf=ALeKk01GrOB8Kt4JBAPwqzUz-jI3EGUq2A%3A1618265615150&ei=D8Z0YJDFCMmUtAbi0rTABA&oq=norther&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIFCAAQkQIyBQguEJECMgoILhCHAhCxAxAUMgUIABCRAjIFCAAQkQIyBQguEJECMgUIABCxAzIFCAAQsQMyDQguEIcCEMcBEK8BEBQ6BwgjELADECc6BwgAEEcQsAM6EAguEMcBEKMCELADEMgDEEM6CgguELADEMgDEENKBQg4EgExUKMJWKMJYLUQaAFwAngAgAGPAYgBjQKSAQMwLjKYAQCgAQGqAQdnd3Mtd2l6yAEPwAEB&sclient=gws-wiz#lrd=0x872d0ff2380e2769:0xba632fdc16ac17d8,1,,,`
+const google = `https://www.google.com/maps/place/Caring+Hearts+of+Utah/@40.1757133,-112.0962297,9z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb937f29d6b30462d!8m2!3d40.1770645!4d-111.5357944?hl=en`
 
 const Footer = () => {
     return (
@@ -24,7 +24,9 @@ const Footer = () => {
                 <p className="phone">(801) 471-5059</p>
             </section>
             <article className="right">
-                <Link to="/" style={{textDecoration: "none"}}><img className="footer-logo" src={icon} alt="Caring Hearts logo"/></Link>  
+                {/* <Link to="/" style={{textDecoration: "none"}}><img className="footer-logo" src={icon} alt="Caring Hearts logo"/></Link>   */}
+                <a href={google} alt="google business"><img className="footer-logo" src={icon} alt="Caring Hearts logo"/></a>  
+
                 
                 <div>
                     <a href="https://www.facebook.com/Caring-Hearts-113697130284224/" target="_blank" rel="noopener noreferrer"><img className="fb" src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="facebook link"/></a>
