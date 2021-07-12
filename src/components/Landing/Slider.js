@@ -3,8 +3,12 @@ import "slick-carousel/slick/slick-theme.css"
 import one from '../../images/caregiverOne.jpeg'
 import two from '../../images/caregiverTwo.jpeg'
 import three from '../../images/caregiverThree.jpeg'
-import four from '../../images/caregiverFour.jpeg'
-import five from '../../images/caregiverFive.jpeg'
+// import four from '../../images/caregiverFour.jpeg'
+import four from '../../images/care.jpg'
+
+// import five from '../../images/caregiverFive.jpeg'
+import five from '../../images/care2.jpg'
+
 import React, {Component} from 'react'
 import Slider from 'react-slick'
 import './Slider.scss'

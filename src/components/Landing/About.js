@@ -7,14 +7,10 @@ const About = () => {
         <main className="about-container"> 
             <img src={logo} alt="logo" />
             <section>
-                {/* <h1>To promote, enhance, and facilitate the quality of life and the recovery of normal movement for our patients through skilled therapeutic intervention.</h1> */}
-                <h1>Professionalizing in personalized full time In-Home care. Let your loved ones avoid the chaos of assisted living centers and give them the care they need in the comfort of their own homes.</h1>
+                {/* <h1>Professionalizing in personalized full time In-Home care. Let your loved ones avoid the chaos of assisted living centers and give them the care they need in the comfort of their own homes.</h1> */}
                 <br/>
-                <p>It is our mission to create an enjoyable family atmosphere and rewarding work environment where you are happy, love being here and can reach your individual aspirations and goals. Our entire staff is made up of very creative and high toned people who are committed to providing you with safe, effective and creative treatments. We promise to listen, understand and genuinely care about you and your condition. We will provide you with this level of service in a friendly, fun and compassionate atmosphere.</p>
+                <h1>With decades of experience we are a proven source for full-time live-in care. We thrive on helping your loved ones live their best lives at home, it’s what we do.</h1>
                 <br/>
-                <p>At Northern Arizona Rehabilitation & Fitness, PC we specialize in treatment for all injuries to the spine, shoulder, elbow, wrist/hand, hip, knee and foot/ankle. At any time during the day, our clinic is filled with athletes and non-athletes alike ranging in age from 5-100.</p>
-                <br/>
-                <p>All our physical therapists are licensed by the state of Arizona and are actively involved in your program throughout the course of treatment. Your treatment will include a comprehensive initial examination and the development of an individualized treatment plan. Our rehabilitation environment allows for close supervision and personalized care; this ensures your program is performed safely and correctly. When it comes to physical therapy, we know you have a choice and we truly appreciate you choosing us!</p>
             </section>  
         </main>
     )
