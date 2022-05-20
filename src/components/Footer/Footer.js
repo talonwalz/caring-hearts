@@ -15,7 +15,7 @@ const Footer = () => {
                 <Link to="/our-services" style={{textDecoration: "none"}}><li>SERVICES</li></Link>
                 <Link to="/new-patient" style={{textDecoration: "none"}}><li>NEW PATIENT</li></Link>
                 <Link to="/contact-us" style={{textDecoration: "none"}}><li>CONTACT US</li></Link>
-                <Link to="/auth" style={{textDecoration: "none"}}><li>LOGIN</li></Link>
+                {/* <Link to="/auth" style={{textDecoration: "none"}}><li>LOGIN</li></Link> */}
                 <Link to="/employee-login" style={{textDecoration: "none"}}><li>EMPLOYEES</li></Link>
             </ul>   
             

@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, HashRouter } from 'react-router-dom'
-import { Provider } from 'react-redux'
-import store from './Redux/store'
+// import { Provider } from 'react-redux'
+// import store from './Redux/store'
 import ScrollToTop from './components/ScrollToTop'
 import './index.scss';
 
@@ -14,10 +14,10 @@ const Router = process.env.NODE_ENV === 'development' ? HashRouter : BrowserRout
 ReactDOM.render(
   <React.StrictMode> 
     <Router>
-      <Provider store={store}>
+      {/* <Provider store={store}> */}
         <ScrollToTop />
         <App />
-      </Provider>
+      {/* </Provider> */}
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
